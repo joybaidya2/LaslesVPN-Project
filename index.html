@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaslesVPN Project</title>
+    <!--Tailwimnd link-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Front awesome icon cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-white">
+    <!--Navigation bar start-->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="flex justify-between items-center p-5 px-8">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-fire text-4xl text-red-500"></i>
+                <h1 class="text-xl font-semibold">Lasles<span class="font-bold">VPN</span></h1>
+            </div>
+    
+            <!-- Navigation Menu for Desktop -->
+            <ul class="hidden md:flex gap-4 lg:gap-12 text-lg text-gray-400 font-medium">
+                <li>
+                    <a class="text-red-500" href="#">About</a>
+                    <hr class="border-0 h-[2px] mt-2 bg-red-500">
+                </li>
+                <li><a class="hover:text-red-500" href="#">Feature</a></li>
+                <li><a class="hover:text-red-500" href="#">Pricing</a></li>
+                <li><a class="hover:text-red-500" href="#">Testimonial</a></li>
+            </ul>
+    
+            <!-- Buttons for Desktop -->
+            <div class="hidden md:flex gap-4">
+                <button class="font-semibold hover:text-red-500">Sign In</button>
+                <button class="text-red-500 border border-red-500 px-9 py-2 rounded-full font-semibold hover:bg-red-500 hover:text-white">
+                    Sign Up
+                </button>
+            </div>
+    
+            <!-- Hamburger Icon for Mobile -->
+            <div class="md:hidden">
+                <button id="menu-button" class="text-3xl text-red-500">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center text-lg text-gray-400 font-medium gap-4 p-5 bg-white shadow-md">
+            <a class="text-red-500" href="#">About</a>
+            <a class="hover:text-red-500" href="#">Feature</a>
+            <a class="hover:text-red-500" href="#">Pricing</a>
+            <a class="hover:text-red-500" href="#">Testimonial</a>
+            <div class="flex flex-col items-center gap-4">
+                <button class="font-semibold hover:text-red-500">Sign In</button>
+                <button class="text-red-500 border border-red-500 px-9 py-2 rounded-full font-semibold hover:bg-red-500 hover:text-white">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="grid md:grid-cols-2 gap-8 px-6 md:px-16">
+            <div class="md:mt-20 lg:mt-28 sm:mt-10 mt-10">
+                <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-5xl font-bold italic">Want anything to be easy with <span class="font-extrabold">LaslesVPN</span>.</h1>
+                <p class="mt-5 text-xl text-gray-500">Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
+                <button class="mt-8 px-16 py-3 bg-red-500 text-white rounded-md font-bold w-full md:max-w-fit hover:shadow-2xl hover:shadow-red-500">Get Started</button>
+            </div>
+            <div>
+                <img class="mt-16" src="https://next-landing-vpn.vercel.app/_next/image?url=%2Fassets%2FIllustration1.png&w=1920&q=100" alt="boys image">
+            </div>
+        </div>
+    </main>
+
+    <section class="bg-gray-50">
+        <div class="px-8 grid md:grid-cols-3 md:max-w-5xl md:mx-auto p-10 mt-8 md:mt-32 justify-items-center space-y-8 md:space-y-0">
+            <!-- User Stats -->
+            <div class="flex items-center gap-12 md:gap-6 border-b-2 md:border-b-0 md:border-r-2 border-red-400 pb-4 md:pb-0 md:w-full">
+                <i class="fa-solid fa-user text-2xl py-3 px-4 rounded-full text-red-500 bg-red-100"></i>
+                <div>
+                    <h1 class="font-extrabold text-xl md:text-2xl text-gray-800">390+</h1>
+                    <p class="text-lg font-medium text-gray-500">Users</p>
+                </div>
+            </div>
+    
+            <!-- Locations Stats -->
+            <div class="flex items-center gap-6 border-b-2 md:border-b-0 md:border-r-2 border-red-400 pb-4 md:pb-0 md:pl-8 md:w-full">
+                <i class="fa-solid fa-location-crosshairs text-2xl py-3 px-4 rounded-full text-red-500 bg-red-100"></i>
+                <div>
+                    <h1 class="font-extrabold text-xl md:text-2xl text-gray-800">20+</h1>
+                    <p class="text-lg font-medium text-gray-500">Locations</p>
+                </div>
+            </div>
+    
+            <!-- Server Stats -->
+            <div class="flex items-center gap-6 md:pl-8 md:w-full">
+                <i class="fa-solid fa-server text-2xl py-3 px-4 rounded-full text-red-500 bg-red-100"></i>
+                <div>
+                    <h1 class="font-extrabold text-xl md:text-2xl text-gray-800">50+</h1>
+                    <p class="text-lg font-medium text-gray-500">Servers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Features section start-->
+    <section>
+        <div class="mt-10 md:mt-24 grid md:grid-cols-2 px-6 md:px-12">
+            <div>
+                <img src="https://next-landing-vpn.vercel.app/_next/image?url=%2Fassets%2FIllustration2.png&w=1920&q=100" alt="">
+            </div>
+            <div class="mx-4 md:mx-10 lg:mx-20 mt-5">
+                <h1 class="font-serif font-bold text-2xl  md:text-4xl">We Provide Many Features You Can Use</h1>
+                <p class="mt-4 text-lg text-gray-500 font-medium">You can explore the features that we provide with fun and have their own functions each feature.</p>
+                <div class="flex items-center gap-4 mt-4 font-medium text-gray-500 hover:scale-105">
+                    <i class="fa-solid fa-check text-[9px] p-[4px] px-[5px] bg-green-600 text-white rounded-full"></i>
+                    <p>Powerfull online protection</p>
+                </div>
+                <div class="flex items-center gap-4 font-medium text-gray-500 hover:scale-105">
+                    <i class="fa-solid fa-check text-[9px] p-[4px] px-[5px] bg-green-600 text-white rounded-full"></i>
+                    <p>Internet without borders.</p>
+                </div>
+                <div class="flex items-center gap-4 font-medium text-gray-500 hover:scale-105">
+                    <i class="fa-solid fa-check text-[9px] p-[4px] px-[5px] bg-green-600 text-white rounded-full"></i>
+                    <p>Supercharged VPN</p>
+                </div>
+                <div class="flex items-center gap-4 font-medium text-gray-500 hover:scale-105">
+                    <i class="fa-solid fa-check text-[9px] p-[4px] px-[5px] bg-green-600 text-white rounded-full"></i>
+                    <p>No specific time limits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100">
+        <div class="text-center px-4 max-w-xl mx-auto mt-10 md:mt-24 py-14">
+            <h1 class="font-bold text-2xl md:text-4xl italic">Choose Your Plan</h1>
+            <p class="mt-4 text-lg text-gray-500 font-medium">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+        </div>
+    </section>
+    <!--Golbal Network Section-->
+    <section>
+        <div class="text-center max-w-xl px-4 md:px-0 mx-auto md:mt-20 mt-10">
+            <h1 class="text-2xl md:text-4xl font-bold ">Huge Global Network of Fast VPN</h1>
+            <p class="text-gray-500 font-medium text-lg mt-4">See LaslesVPN everywhere to make it easier for you when you move locations.</p>
+        </div>
+    </section>
+    <!--Populer companies logo-->
+    <section>
+        <div class="mt-10 md:mt-24 grid grid-cols-2 md:grid-cols-5 justify-between items-center text-center gap-10 px-8">
+            <div>
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/019/766/240/small/amazon-logo-amazon-icon-transparent-free-png.png" alt="Amazon Logo">
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/y2ske730sjqp/6bhPChRFLRxc17sR8jgKbe/6fa1c6e6f37acdc97ff635cf16ba6fb3/Logos-Readability-Netflix-logo.png" alt="Netflix logo">
+            </div>
+            <div>
+                <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-sva-scholarship-20.png" alt="Google Logo">
+            </div>
+            <div>
+                <img src="https://logos-download.com/wp-content/uploads/2016/06/Reddit_logo_full_1.png" alt="Riddit Logo">
+            </div>
+            <div>
+                <img class="ml-10 md:ml-0" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/559px-Spotify_logo_with_text.svg.png" alt="Spotify Logo">
+            </div>
+        </div>
+    </section>
+    <!--Client section-->
+    <section>
+        <div class="w-full max-w-xl mx-auto text-center px-4 mt-8 md:mt-16">
+            <h1 class="font-bold italic text-2xl md:text-4xl">Trusted by Thousands of Happy Customer</h1>
+            <p class="mt-4 text-gray-500 text-xl">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
+        </div>
+        <div class="grid  md:grid-cols-3 px-8  lg:px-14 mt-8 md:mt-10 lg:mt-16 md:gap-4 lg:gap-8 space-y-5 md:space-y-0">
+            <div class="border-2 p-5 lg:p-5 lg:py-8 rounded-lg hover:border-red-500">
+                <div class="flex md:gap-3 lg:gap-4">
+                    <img class="rounded-full w-12 h-12" src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/rashmika-mandanna-1076783-28-12-2016-12-20-39.jpg" alt="">
+                    <div>
+                        <p class="font-bold text-sm  lg:text-lg">Rashmika Mandanna</p>
+                        <P class="text-md font-medium text-gray-500">Indian Actor</P>
+                    </div>
+                </div>
+                <p class="text-md font-medium text-gray-500 mt-6 ">Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best</p>
+            </div>
+            <div class="border-2 p-5 lg:p-5 lg:py-8 rounded-lg hover:border-red-500">
+                <div class="flex md:gap-3 lg:gap-4">
+                    <img class="rounded-full w-12 h-12" src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/rashmika-mandanna-1076783-28-12-2016-12-20-39.jpg" alt="">
+                    <div>
+                        <p class="font-bold text-sm  lg:text-lg">Rashmika Mandanna</p>
+                        <P class="text-md font-medium text-gray-500">Indian Actor</P>
+                    </div>
+                </div>
+                <p class="text-md font-medium text-gray-500 mt-6 ">Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best</p>
+            </div>
+            <div class="border-2 p-5 lg:p-5 lg:py-8 rounded-lg hover:border-red-500">
+                <div class="flex md:gap-3 lg:gap-4">
+                    <img class="rounded-full w-12 h-12" src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/rashmika-mandanna-1076783-28-12-2016-12-20-39.jpg" alt="">
+                    <div>
+                        <p class="font-bold text-sm  lg:text-lg">Rashmika Mandanna</p>
+                        <P class="text-md font-medium text-gray-500">Indian Actor</P>
+                    </div>
+                </div>
+                <p class="text-md font-medium text-gray-500 mt-6 ">Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best</p>
+            </div>
+        </div>
+    </section>
+    <script src="javaScript.js"></script>
+</body>
+</html>
